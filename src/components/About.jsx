@@ -5,7 +5,7 @@ import showcaseImage2 from '../assets/about-2.png'; // the illuminated water fea
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#191919] text-white py-24 lg:py-12">
+    <section id="about" className="bg-[#191919] text-white pt-16 lg:pt-8 pb-24 lg:pb-17">
       <div className="max-w-7xl mx-auto px-6 lg:px-15">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -33,14 +33,15 @@ const About = () => {
           </div>
 
           {/* RIGHT SIDE - Text Content */}
-          <div className="space-y-10 lg:-ml-8">
+          <div className="space-y-10 lg:-ml-9">
             {/* DUCTIL heading + small logo */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 mb-2">
               <img
                 src={ductilLogoSmall}
                 alt="Ductil"
-                className="h-18 w-auto object-contain opacity-100"
+                className="h-[100px] w-auto object-contain opacity-100 -ml-4"
               />
+              <div className="w-30 h-0.5 bg-white/80 ml-4"></div>
             </div>
 
             {/* Main description */}
@@ -49,18 +50,18 @@ const About = () => {
               for modern construction needs.
             </p>
             {/* Bullet points */}
-            <ul className="space-y-6 text-lg md:text-l font-light text-gray-300">
-              <li className="font-oswald flex items-start gap-4">
+            <ul className="space-y-6 text-xl md:text-xl font-light text-white">
+              <li className="flex items-start gap-4">
                 <span className="text-white-300 text-2xl leading-none mt-1">•</span>
-                <span>25+ years of global engineering experience</span>
+                <span className="font-oswald tracking-wide" style={{ wordSpacing: '0.15em' }}>25+ years of global engineering experience</span>
               </li>
-              <li className="font-oswald flex items-start gap-4">
+              <li className="flex items-start gap-4">
                 <span className="text-white-300 text-2xl leading-none mt-1">•</span>
-                <span>Custom FRC design for industrial floors, high-rise, and foundations</span>
+                <span className="font-oswald tracking-wide" style={{ wordSpacing: '0.15em' }}>Custom SFRC design for tunneling segment and industrial floors  </span>
               </li>
-              <li className="font-oswald flex items-start gap-4">
+              <li className="flex items-start gap-4">
                 <span className="text-white-300 text-2xl leading-none mt-1">•</span>
-                <span>Backed by international standards and advanced R&D</span>
+                <span className="font-oswald tracking-wide" style={{ wordSpacing: '0.15em' }}>Backed by international standards and advanced R&D</span>
               </li>
             </ul>
           </div>

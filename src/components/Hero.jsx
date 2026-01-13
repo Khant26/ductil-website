@@ -16,12 +16,12 @@ const Hero = () => {
             alt="Ductil Logo"
             className="w-4/5 max-w-[580px] md:max-w-[720px] lg:max-w-[900px] drop-shadow-2xl"
             />
-            <p className="mb-6 text-2xl md:text-4xl font-light text-white/90 tracking-wider">
+            <p className="mb-6 text-2xl md:text-4xl font-light text-white/90 tracking-widest">
             HiTech for your Concrete ®
             </p>
-            <button className="mt-15 px-10 py-4 bg-white text-cyan-900 font-medium rounded-lg shadow-lg hover:bg-gray-100 transition">
+            <a href="#product" className="mt-15 px-10 py-4 bg-white text-black-900 font-medium rounded-md shadow-lg hover:bg-gray-100 hover:scale-105 transition inline-block">
             Let's Explore
-            </button>
+            </a>
         </div>
     </section>
   );

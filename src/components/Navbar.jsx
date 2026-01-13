@@ -1,11 +1,41 @@
 // src/components/Navbar.jsx
+import { useState, useEffect } from 'react';
 import navbarLogo from '../assets/Ductil-W.gif'; // your specific navbar logo
 
 const Navbar = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Show navbar when at top of page
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      }
+      // Hide when scrolling down, show when scrolling up
+      else if (currentScrollY > lastScrollY) {
+        setIsVisible(false); // Scrolling down - hide navbar
+      } else {
+        setIsVisible(true);  // Scrolling up - show navbar
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Cleanup event listener
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       {/* Main navbar container with #1D2224 + 22% opacity */}
-      <div className="bg-[#1D2224]/35 backdrop-blur-xs border-b border-white/5">
+      <div className="bg-[#1D2224]/45 backdrop-blur-xs border-b border-white/5">
         <div className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
           
           {/* Logo - left side */}
@@ -13,7 +43,7 @@ const Navbar = () => {
             <img
               src={navbarLogo}
               alt="Ductil Logo"
-              className="h-12 w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
           </a>
 
@@ -21,25 +51,25 @@ const Navbar = () => {
           <div className="flex items-center gap-12">
             <a
               href="#home"
-              className="text-white/90 hover:text-white text-lg font-medium tracking-wide transition-colors duration-200"
+              className="text-white/90 hover:text-[#0D9FB4] text-xl font-medium tracking-wide transition-colors duration-200"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-white/90 hover:text-white text-lg font-medium tracking-wide transition-colors duration-200"
+              className="text-white/90 hover:text-[#0D9FB4] text-xl font-medium tracking-wide transition-colors duration-200"
             >
               About us
             </a>
             <a
               href="#product"
-              className="text-white/90 hover:text-white text-lg font-medium tracking-wide transition-colors duration-200"
+              className="text-white/90 hover:text-[#0D9FB4] text-xl font-medium tracking-wide transition-colors duration-200"
             >
               Product
             </a>
             <a
               href="#partner"
-              className="text-white/90 hover:text-white text-lg font-medium tracking-wide transition-colors duration-200"
+              className="text-white/90 hover:text-[#0D9FB4] text-xl font-medium tracking-wide transition-colors duration-200"
             >
               Partner
             </a>
