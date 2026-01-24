@@ -1,28 +1,61 @@
 import heroBg from '../assets/hero.jpg';
-import ductilLogoHero from '../assets/Ductil-W.gif'; // Replace with your Ductil logo image
+import ductilLogoHero from '../assets/Ductil-W.gif';
 
 const Hero = () => {
   return (
     <section
-        id="home"
-        className="relative h-screen bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
-        >
-        <div className="absolute inset-0 bg-cyan-900/65"></div>
+      id="home"
+      className="
+        relative min-h-screen
+        bg-cover bg-center
+        flex items-center justify-center
+        px-4 sm:px-8 md:px-0
+        overflow-x-hidden
+      "
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      <div className="absolute inset-0 bg-cyan-900/65"></div>
 
-        <div className="relative z-10 flex flex-col items-center text-center">
-            <img
-            src={ductilLogoHero}
-            alt="Ductil Logo"
-            className="w-4/5 max-w-[580px] md:max-w-[720px] lg:max-w-[900px] drop-shadow-2xl"
-            />
-            <p className="mb-6 text-2xl md:text-4xl font-light text-white/90 tracking-widest">
-            HiTech for your Concrete ®
-            </p>
-            <a href="#product" className="mt-15 px-10 py-4 bg-white text-black-900 font-medium rounded-md shadow-lg hover:bg-gray-100 hover:scale-105 transition inline-block">
-            Let's Explore
-            </a>
-        </div>
+      <div className="relative z-10 flex flex-col items-center text-center w-full">
+        <img
+          src={ductilLogoHero}
+          alt="Ductil Logo"
+          className="
+            w-4/5
+            max-w-[320px]
+            sm:max-w-[480px]
+            md:max-w-[720px]
+            lg:max-w-[900px]
+            2xl:max-w-[1200px]
+            3xl:max-w-[1500px]
+            drop-shadow-2xl
+          "
+        />
+
+        <p
+          className="
+            mb-6 mt-6
+            text-lg sm:text-2xl md:text-4xl 2xl:text-5xl 3xl:text-6xl
+            font-light text-white/90 tracking-widest
+          "
+        >
+          HiTech for your Concrete ®
+        </p>
+
+        <a
+          href="#product"
+          className="
+            mt-8
+            px-6 py-3 sm:px-10 sm:py-4
+            bg-white text-black
+            font-medium rounded-md shadow-lg
+            hover:bg-gray-100 hover:scale-105
+            transition inline-block
+          "
+        >
+          Let's Explore
+        </a>
+      </div>
     </section>
   );
 };

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Prevent horizontal overflow (mobile white line fix) */
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* Set Monda as the default font family */
 * {
   font-family: 'Monda', sans-serif;
