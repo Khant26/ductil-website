@@ -24,7 +24,8 @@ const Hero = () => {
           src={ductilLogoHero}
           alt="Ductil Logo"
           className="
-            w-4/6 
+            w-4/6
+            -mb-4 sm:-mb-5 md:-mb-6
             max-w-[320px]
             sm:max-w-[480px]
             md:max-w-[600px]
@@ -38,7 +39,8 @@ const Hero = () => {
         {/* Tagline */}
         <p
           className="
-            mt-1 mb-8 
+            -mt-1 sm:-mt-2 md:-mt-3
+            mb-8
             text-lg
             sm:text-2xl
             md:text-3xl 

@@ -19,3 +19,7 @@ body {
 .font-oswald {
   font-family: 'Oswald', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth; /* GSAP controls scrolling */
+}

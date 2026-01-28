@@ -1,5 +1,12 @@
 // src/components/Footer.jsx
 import ductilLogo from '../assets/footer.png';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -22,13 +29,52 @@ const Footer = () => {
             </div>
 
             {/* Social media */}
-            <div className="flex items-center gap-4 sm:gap-5 md:gap-6
-                            text-lg sm:text-xl md:text-2xl">
-              <a href="#" className="hover:text-[#0D9FB4] transition-colors">f</a>
-              <a href="#" className="hover:text-[#0D9FB4] transition-colors">instagram</a>
-              <a href="#" className="hover:text-[#0D9FB4] transition-colors">in</a>
-              <a href="#" className="hover:text-[#0D9FB4] transition-colors">twitter</a>
-              <a href="#" className="hover:text-[#0D9FB4] transition-colors">youtube</a>
+            <div
+              className="
+                flex items-center
+                gap-4 sm:gap-5 md:gap-6
+                text-lg sm:text-xl md:text-2xl
+              "
+            >
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="hover:text-[#0D9FB4] transition-colors"
+              >
+                <FaFacebookF />
+              </a>
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="hover:text-[#0D9FB4] transition-colors"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="hover:text-[#0D9FB4] transition-colors"
+              >
+                <FaLinkedinIn />
+              </a>
+
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="hover:text-[#0D9FB4] transition-colors"
+              >
+                <FaTwitter />
+              </a>
+
+              <a
+                href="#"
+                aria-label="YouTube"
+                className="hover:text-[#0D9FB4] transition-colors"
+              >
+                <FaYoutube />
+              </a>
             </div>
 
             <div className="font-oswald text-xs sm:text-sm md:text-lg">
@@ -47,26 +93,36 @@ const Footer = () => {
 
             {/* Germany */}
             <div>
-              <h3 className="
-                text-base sm:text-lg md:text-2xl
-                font-semibold text-[#0D9FB4]
-                mb-2 sm:mb-3 md:mb-4
-              ">
+              <h3
+                className="
+                  text-base sm:text-lg md:text-2xl
+                  font-semibold text-[#0D9FB4]
+                  mb-2 sm:mb-3 md:mb-4
+                "
+              >
                 Contact
               </h3>
 
-              <p className="font-oswald text-xs sm:text-sm md:text-lg
-                            text-gray-300 leading-relaxed"
-                 style={{ wordSpacing: '0.15em' }}>
+              <p
+                className="
+                  font-oswald text-xs sm:text-sm md:text-lg
+                  text-gray-300 leading-relaxed
+                "
+                style={{ wordSpacing: '0.15em' }}
+              >
                 Ductil GmbH<br />
                 Breedeneyer Str. 2B<br />
                 45133 Essen<br />
                 Germany
               </p>
 
-              <p className="font-oswald mt-2 sm:mt-3 md:mt-4
-                            text-xs sm:text-sm md:text-lg"
-                 style={{ wordSpacing: '0.15em' }}>
+              <p
+                className="
+                  font-oswald mt-2 sm:mt-3 md:mt-4
+                  text-xs sm:text-sm md:text-lg
+                "
+                style={{ wordSpacing: '0.15em' }}
+              >
                 Email:
                 <a
                   href="mailto:ralf@ductil.com"
@@ -79,9 +135,13 @@ const Footer = () => {
 
             {/* Thailand */}
             <div className="mt-5 sm:mt-0 md:mt-11">
-              <p className="font-oswald text-xs sm:text-sm md:text-lg
-                            text-gray-300 leading-relaxed"
-                 style={{ wordSpacing: '0.15em' }}>
+              <p
+                className="
+                  font-oswald text-xs sm:text-sm md:text-lg
+                  text-gray-300 leading-relaxed
+                "
+                style={{ wordSpacing: '0.15em' }}
+              >
                 Ductil Co., Ltd.<br />
                 16 Soi Navamin 163 Lane 6<br />
                 Ram Inthra, Khan Nayaok<br />
@@ -89,9 +149,13 @@ const Footer = () => {
                 Thailand
               </p>
 
-              <p className="font-oswald mt-2 sm:mt-3 md:mt-4
-                            text-xs sm:text-sm md:text-lg"
-                 style={{ wordSpacing: '0.15em' }}>
+              <p
+                className="
+                  font-oswald mt-2 sm:mt-3 md:mt-4
+                  text-xs sm:text-sm md:text-lg
+                "
+                style={{ wordSpacing: '0.15em' }}
+              >
                 Email:
                 <a
                   href="mailto:narongkorn@ductil.com"
@@ -105,14 +169,16 @@ const Footer = () => {
         </div>
 
         {/* Bottom copyright */}
-        <div className="
-          mt-5 sm:mt-6 md:mt-8
-          pt-4 sm:pt-6 md:pt-8
-          border-t border-gray-800
-          text-center
-          text-[10px] sm:text-xs md:text-sm
-          text-white/60
-        ">
+        <div
+          className="
+            mt-5 sm:mt-6 md:mt-8
+            pt-4 sm:pt-6 md:pt-8
+            border-t border-gray-800
+            text-center
+            text-[10px] sm:text-xs md:text-sm
+            text-white/60
+          "
+        >
           ductil. © 2024. All Rights Reserved
         </div>
       </div>

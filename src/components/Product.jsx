@@ -57,7 +57,7 @@ const Products = () => {
           mb-8
           leading-relaxed
         ">
-          Advanced fiber reinforcement solutions designed to enhance concrete performance,
+          Advanced fibre reinforcement solutions designed to enhance concrete performance,
           durability, and structural reliability.
         </p>
 
@@ -89,7 +89,7 @@ const Products = () => {
                 mb-4
                 text-white
               ">
-                Steel Fiber
+                Steel Fibre
               </h3>
 
               <p
@@ -133,7 +133,7 @@ const Products = () => {
                 mb-4
                 text-white
               ">
-                Micro Steel Fiber
+                Micro Steel Fibre
               </h3>
 
               <p

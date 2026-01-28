@@ -78,7 +78,7 @@ const About = () => {
                 leading-relaxed
               "
             >
-              We deliver high-tech fiber reinforced concrete solutions
+              We deliver high-tech fibre reinforced concrete solutions
               for modern construction needs.
             </p>
 
