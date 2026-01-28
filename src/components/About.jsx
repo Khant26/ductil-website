@@ -66,7 +66,7 @@ const About = () => {
                 alt="Ductil"
                 className="h-[72px] sm:h-[90px] md:h-[100px] w-auto object-contain -ml-4"
               />
-              <div className="w-20 sm:w-30 h-0.5 bg-white/80 ml-4"></div>
+              <div className="w-20 w-30 h-0.5 bg-white/80 ml-4"></div>
             </div>
 
             {/* Main description */}
